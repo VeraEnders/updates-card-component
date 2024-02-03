@@ -1,5 +1,97 @@
-* {
+:root {
+  --clr-bg-body: #1b1c20;
+  --clr-bg-main: #222327;
+  --clr-bg-link: #16171b;
+  --clr-main: #d2d3d5;
+  --clr-border: #0f0e0e;
+  --ff: 'Poppins', sans-serif;
+}
+
+/* Reset styles */
+*,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* Main styles */
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: var(--ff);
+  background: var(--clr-bg-body);
+}
+
+.wrapper {
+  max-width: 25rem;
+  background: var(--clr-bg-link);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.container {
+  padding: 1.25rem 3.5rem;
+  background: var(--clr-bg-main);
+  color: var(--clr-main);
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.container img {
+  margin: 0.8rem 0;
+  width: 5rem;
+  background: var(--clr-bg-body);
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.component-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.component-desc {
+  margin: 1.25rem 0;
+  font-size: 0.75rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;
+  padding-block: 1.25rem;
+  background: var(--clr-bg-link);
+  color: var(--clr-main);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background: var(--clr-main);
+  color: var(--clr-bg-main)
+}
+
+.btn svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.preferences_link {
+  padding-left: 0.5rem;
 }
