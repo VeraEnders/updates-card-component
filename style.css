@@ -40,6 +40,7 @@ main {
   background: var(--clr-bg-link);
   padding: 1rem;
   border-radius: 0.5rem;
+  animation: main 1s;
 }
 
 .container {
@@ -56,6 +57,7 @@ main {
   background: var(--clr-bg-body);
   padding: 1rem;
   border-radius: 50%;
+  animation: image 2.5s infinite linear;
 }
 
 .component-title {
@@ -82,16 +84,42 @@ main {
   transition: all 0.5s;
 }
 
+.btn_icon {
+  display: flex;
+  width: 1.7rem;
+}
+
 .btn:hover {
   background: var(--clr-main);
   color: var(--clr-bg-main)
 }
 
-.btn svg {
-  width: 1.5rem;
-  height: 1.5rem;
+.btn:hover .btn_icon {
+  fill: var(--clr-main);
+  transform: scale(1.2);
 }
 
 .preferences_link {
   padding-left: 0.5rem;
+}
+
+/* Animation */
+@keyframes main {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes image {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
 }
