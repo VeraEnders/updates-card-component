@@ -22,7 +22,7 @@ The Updates Card Component serves as a visual element to display the latest upda
 * The button changes its background color, and the cog icon scales upon hover.
 
 ## Built with
-- HTML5 / 
+- HTML5
 - CSS
 
 ## Author
