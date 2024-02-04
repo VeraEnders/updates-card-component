@@ -8,7 +8,7 @@
   <h2><a href="https://veraenders.github.io/updates-card-component/">Live</a>
   <span> | </span> 
   <a href="https://github.com/VeraEnders/updates-card-component">Code</a></h2>
-  <div>Challenge is provided by <a href="www.icodethis.com">iCodeThis</a>.</div> 
+  <div>Challenge is provided by <a href="https://icodethis.com/">iCodeThis</a>.</div> 
 </div>
 
 ## About the project
